@@ -1,3 +1,4 @@
+import os
 def clasificar (nota):
     if nota < 60:
         return 'Reprobado'
@@ -14,5 +15,8 @@ def clasificar (nota):
     
 numestudiantes = int(input("Ingrese el número de estudiantes: \n"))
 for i in range(numestudiantes):
+
     nota = int(input("Ingrese la nota del estudiante: \n"))
     print(clasificar(nota))
+    os.system("pause")
+    os.system("cls")
